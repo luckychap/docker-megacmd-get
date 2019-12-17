@@ -48,7 +48,7 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/reposit
     readline-dev \
     sqlite-dev \
     zlib-dev && \
-  echo "**** install rclone ****" && \
+  echo "**** install MEGAcmd ****" && \
   git clone https://github.com/meganz/MEGAcmd.git /opt/MEGAcmd && \
   cd /opt/MEGAcmd && \
   git submodule update --init --recursive && \
