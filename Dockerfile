@@ -57,9 +57,11 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/reposit
   make -j $(nproc) && \
   make install && \
  echo "**** cleanup ****" && \
+ apk del .build-deps && \
  rm -rf \
    /opt/* \
-   /tmp/*
+   /tmp/* \
+   /var/cache/*
 
 ADD ./entrypoint.sh /usr/bin/entrypoint.sh
 
