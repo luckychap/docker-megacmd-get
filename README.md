@@ -3,6 +3,7 @@ This container pulls down a single Mega folder and stores it in the current dire
 from the [MEGAcmd](https://github.com/meganz/MEGAcmd) repository.
  
 ### Usage
+```
 docker run \
   --interactive \
   --tty \
@@ -10,7 +11,7 @@ docker run \
   --volume $(pwd):/data \
   radpenguin/megacmd-get \
   'https://mega.nz/#F!ABCD1234'
-   
+```
+
 ### Notes
-Thanks to @danielquinn for his [MEGAcmd for Alpine Linux](https://gitlab.com/danielquinn/megacmd-alpine/) 
-repo, which made creating this container much, much easier.
+Thanks to [@danielquinn](https://danielquinn.org/) for his [MEGAcmd for Alpine Linux](https://gitlab.com/danielquinn/megacmd-alpine/) repo, which made creating this container much, much easier.
